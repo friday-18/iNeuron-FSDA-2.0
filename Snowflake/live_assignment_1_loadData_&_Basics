@@ -1,0 +1,96 @@
+SHOW DATABASES;
+show warehouses; 
+use warehouse DEMOWAREHOUSE; 
+use database DEMODATABASE;
+--1) Creation and Loading the data into Snowflake
+
+CREATE or replace TABLE "DEMODATABASE"."PUBLIC"."HM_SALES_DATA_FINAL" 
+(
+  "ORDER_ID" VARCHAR (100) NOT NULL ,
+  "ORDER_DATE" DATE NOT NULL DEFAULT 0 PRIMARY KEY,
+  "SHIP_DATE" DATE NOT NULL,
+  "SHIP_MODE" VARCHAR (100) NOT NULL,
+  "CUSTOMER_NAME" VARCHAR (100) NOT NULL,
+  "SEGMENT" VARCHAR (100) ,
+  "STATE" VARCHAR (100) ,
+  "COUNTRY" VARCHAR (100) ,
+  "MARKET" VARCHAR (100) ,
+  "REGION" VARCHAR (100) ,
+  "PRODUCT_ID" VARCHAR (100) ,
+  "CATEGORY" VARCHAR (100) ,
+  "SUB_CATEGORY" VARCHAR (100),
+  "PRODUCT_NAME" VARCHAR (150),
+  "SALES" INTEGER,
+  "QUANTITY" INTEGER,
+  "DISCOUNT" DOUBLE,
+  "PROFIT" DOUBLE,
+  "SHIPPING_COST" DOUBLE,
+  "ORDER_PRIORITY" VARCHAR (100),
+  "YEAR" DATE
+)COMMENT = 'liveAssignment_1';
+
+describe table HM_SALES_DATA_FINAL;
+select * from HM_SALES_DATA_FINAL;
+select distinct  * from HM_SALES_DATA_FINAL;
+
+--2) Changing the Primary key from ORDER_DATE to ORDER_ID : 
+--IMP--To change we need to drop it first !
+ALTER TABLE HM_SALES_DATA_FINAL
+DROP PRIMARY KEY;
+describe table HM_SALES_DATA_FINAL;
+
+ALTER TABLE HM_SALES_DATA_FINAL
+ADD PRIMARY KEY (ORDER_ID);
+describe table HM_SALES_DATA_FINAL;
+
+--3)
+--Since Order date and ship date might not be loaded as date dataTye it can be converted like this through cast() Function 
+-- But its already set in yyyy-mm-dd through excel
+Update HM_SALES_DATA_FINAL
+SET ORDER_DATE = CAST(ORDER_DATE AS DATE);
+
+describe table HM_SALES_DATA_FINAL;
+
+Update HM_SALES_DATA_FINAL
+SET SHIP_DATE = CAST(SHIP_DATE AS DATE);
+
+--4)Create a new column called order_extract and extract the number after the last‘–‘from Order_ID column. 
+
+select ORDER_ID,ORDER_DATE,SHIP_DATE,CUSTOMER_NAME,COUNTRY,substr(ORDER_ID,9,25) as order_extract from HM_SALES_DATA_FINAL;
+
+
+--5)Create a new column called Discount Flag and categorize it based on discount.Use ‘Yes’ if the discount is greater than zero else ‘No’.;
+
+SELECT *,
+      CASE
+            WHEN DISCOUNT>0 THEN 'Yes'
+            ELSE 'NO'
+      END AS DISCOUNT_FLAG
+FROM HM_SALES_DATA_FINAL;
+
+--6)Create a new column called process days and calculate how many days it takes for each order id to process from the order to its shipment. ;
+CREATE OR REPLACE TABLE HM_SALES_DATA_FINAL AS
+SELECT*,
+        DATEDIFF('days',ORDER_DATE,SHIP_DATE) as PROCESS_DAYS
+FROM HM_SALES_DATA_FINAL;
+
+
+//7. Create a new column called Rating and then based on the Process dates give
+//rating like given below.
+//a. If process days less than or equal to 3days then rating should be 5
+//b. If process days are greater than 3 and less than or equal to 6 then rating
+//should be 4
+//c. If process days are greater than 6 and less than or equal to 10 then rating
+//should be 3
+//d. If process days are greater than 10 then the rating should be 2.
+
+// ANS :
+
+SELECT*,
+    CASE
+       WHEN PROCESS_DAYS <=3 THEN 5
+       WHEN PROCESS_DAYS > 3 AND PROCESS_DAYS <= 6 THEN 4
+       WHEN PROCESS_DAYS > 6 AND PROCESS_DAYS <= 10 THEN 3
+       ELSE 2
+     END AS RATING
+FROM HM_SALES_DATA_FINAL;
