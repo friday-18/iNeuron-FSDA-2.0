@@ -1,0 +1,60 @@
+Advance Excel Assignment 2
+
+1. What does the dollar($) sign do?
+ans:
+	In Excel, the dollar sign is used to create an absolute reference in a cell address. When you put a dollar sign before the column letter, 
+	row number, or both, it fixes that part of the cell address when you copy the formula to another location.
+
+-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X.
+
+2. How to Change the Reference from Relative to Absolute (or Mixed)?
+ans:
+	For absolute column: Add a dollar sign before the column letter (e.g., $A1).
+	For absolute row: Add a dollar sign before the row number (e.g., A$1).
+	For absolute reference: Add a dollar sign before both column and row (e.g., $A$1).
+	
+-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X.
+
+3. Explain the order of operations in excel?
+ans:
+	Excel follows the order of operations (PEMDAS/BODMAS),(left to right):
+	Parentheses/Brackets	  ()
+	Exponents/Orders		  ^
+	Multiplication			  *
+	Division				  /
+	Addition			   	  +
+	Subtraction				  - 
+
+-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X.
+
+4. What, according to you, are the top 5 functions in excel and write a basic syntax for any of two?
+ans:
+	SUM,		=SUM(number1, [number2]..)
+	
+	AVERAGE,	=AVERAGE(number1, [number2],..)
+	
+	MIN,		=MIN(number1, [number2]..)
+	
+	TRIM,		=TRIM(text)
+	
+	INDEX,		=INDEX(array, row_num, [column_num]..)
+
+-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X.
+
+5. When would you use the subtotal function?
+ans:
+	The SUBTOTAL function is used when you want to perform calculations on a range that includes other subtotal results.
+	For example, if you have subtotal results in a column and you want to calculate the overall subtotal or average, you can use SUBTOTAL function.
+
+-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X.
+	
+6. What is the syntax of the vlookup function? Explain the terms in it?
+ans:
+	Syntax of VLOOKUP Function:
+	=VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])
+	lookup_value: The value to search for in the first column of the table.
+	table_array: The table of data containing the information to retrieve.
+	col_index_num: The column number in the table from which to retrieve the value.
+	range_lookup: TRUE for an approximate match, FALSE for an exact match.
+
+-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X.
