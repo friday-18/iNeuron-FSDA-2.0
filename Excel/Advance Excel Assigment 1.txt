@@ -1,0 +1,56 @@
+Advance Excel Assignment 1
+
+1. What do you mean by cells in an excel sheet?
+ans:	
+	In Excel, a cell is the intersection point of a row and a column. Each cell is identified by a unique address, which is a combination of the column letter and the row number. For example, the cell at the intersection of column B and row 6 is referred to as "B6" .
+	
+-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X.
+
+2. How can you restrict someone from copying a cell from your worksheet?
+ans:
+	To prevent someone from copying a cell in your worksheet following steps should be followed :
+	Select the cell or range of cells you want to protect.
+	Right-click and choose "Format Cells."
+	In the "Protection" tab, uncheck the "Locked" option.
+	Go to the "Review" tab, click on "Protect Sheet," and set a PASSWORD if needed.
+	Click "OK."
+	Now the selected cells data cannot be copied !
+	
+-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X.
+
+3. How to move or copy the worksheet into another workbook?
+ans:
+	Right-click on the sheet tab you want to move or copy.
+	Choose "Move or Copy."
+	In the "To book" dropdown, selectthe target workbook. Choose the location withIn the workbook where you want to place the sheet.
+	Select whether you want to create a copy or move the sheet.
+	Click "OK."
+	One worksheet has been copied or moved into another workboook 
+	
+-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X.
+
+4. Which key is used as a shortcut for opening a new window document?
+ans:
+	In Microsoft Excel, the shortcut for Opening a new Window is Ctrl + N.
+	
+-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X.
+
+5. What are the things that we can notice after opening the Excel interface?
+ans:
+	Things noticed after opening the Excel interface are: 
+	A blank(Empty) worksheet.
+	Menu bar with tabs like "File","Home","Insert" etc.
+	Ribbon containing various commands related to the selected tab.
+	Cells organized in columns (labeled A, B, C, ...) and rows (labeled 1, 2, 3, ...).
+	Formula bar for entering and editing formulas.
+	Status bar at the bottom displaying information like cell count, sum, average, etc.
+	Etc,Etc... .
+	
+-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X.
+
+6. When to use a relative cell reference in excel?
+ans:
+	For example, if you have a formula in cell B2 as "=A2+C2" and you copy it to cell B3, it will automatically adjust to "=A3+C3."
+	Relative references are useful when you want the same calculation relative to the position of the formula in different cells.
+	
+-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X.
