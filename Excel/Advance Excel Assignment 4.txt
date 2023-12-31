@@ -1,0 +1,37 @@
+Advance Excel Assignment 4
+
+1. To use the ribbon commands, what menu and grouping of commands will you find the Insert and Delete command?
+ans:
+	The "Insert" and "Delete" commands in Excel are found under the "Home" tab in the "Cells" group. Specifically, they will be found these commands in the "Insert" and "Delete" drop-down menus within the "Cells" group.
+
+-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X.
+
+2. If you set a row height or column width to 0 (zero), what happens to the row and column?
+ans:
+	Setting a row height or column width to 0 in Excel hides the respective row or column. While data remains intact, it becomes invisible on the spreadsheet. This technique is useful for temporary hiding without deleting content, and to reveal, the height or width must be reset.
+
+-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X.
+	
+3. Is there a need to change the height and width in a cell? Why?
+ans:
+	Yes, adjusting the height and width of cells in Excel is essential for formatting and organizing data. Proper cell dimensions enhance readability, prevent data truncation, and contribute to the overall aesthetic of the spreadsheet. Adjusting cell dimensions is crucial for creating well-organized and visually appealing worksheets.
+	
+-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X.
+
+4. What is the keyboard shortcut to unhide rows?
+ans:
+	The keyboard shortcut to unhide rows in Excel is Ctrl + Shift + 9.
+
+-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X.
+
+5. How to hide rows containing blank cells?
+ans:
+	To hide rows with blank cells in Excel, select the desired rows, go to "Find & Select" in the "Home" tab, choose "Go To Special", pick "Blanks," and click "OK." Right-click on the selected rows and choose "Hide".
+
+-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X.
+
+6. What are the steps to hide the duplicate values using conditional formatting in excel?
+ans:
+	Firstly select the data -> Select conditional formatting -> Click on Highlight cell rules -> Click on Duplicate Value -> End .
+	
+-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X.

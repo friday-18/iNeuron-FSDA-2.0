@@ -1,0 +1,42 @@
+Advance Excel Assignment 3
+
+1. How and when to use the AutoSum command in excel?
+ans:
+	The AutoSum command is used to quickly add up a range of cells. To use It: Select the cell where you want the sum to appear.
+	Click on the "AutoSum" button in the "Editing" group on the "Home" tab. Excel will automatically suggest a range based on adjacent cells.
+	If the suggested range is correct, press Enter. Else adjust the range manually. For Eg, in cells A1 to A3 with values 10, 20, and 30, selecting A4 and using AutoSum results in A4 displaying "SUM(A1:A3)" 
+	and the sum, 60.
+
+-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X.
+
+2. What is the shortcut key to perform AutoSum?
+ans:
+	Shortcut key to perform AutoSum is Alt + = (Press and hold the Alt key and then press the equal key).
+	
+-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X.
+	
+3. How do you get rid of Formula that omits adjacent cells?
+ans:
+	To eliminate a formula excluding adjacent cells in Excel, use "Paste Special." Copy the formula cells, right-click the destination, choose "Paste Special," and select "Values." This replaces formulas with static values, ensuring independence from adjacent cells.
+	For Eg,Consider a dataset in cells A1 to A3, with values 10, 20, and 30. In B1, you have a formula "=A1+A2." To get rid of the formula and keep the result, copy B1, right-click on a new cell (eg C1), choose "Paste Special," and select "Values." Now, C1 holds the static result of 30, detached from the original formula.
+
+-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X.
+
+4. How do you select non-adjacent cells in Excel 2016?
+ans:
+	To select non-adjacent cells in Excel 2016: Click on the first cell or range of cells. Hold down the Ctrl key .
+	While holding down Ctrl, click on the additional cells or ranges you want to select.
+
+-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X.	
+	
+5. What happens if you choose a column, hold down the Alt key and press the letters ocw in quick succession?
+ans:
+	If you choose a column, hold down the Alt key, and press the letters o c w in quick succession, it will ask column width size from the user ,after entering an Integer value or a decimal value , click on "OK" to reflect the change of column width .[OR it will set the column width to "AutoFit" adjusting the width to fit the content in the selected column.]
+
+-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X.	
+	
+6. If you right-click on a row reference number and click on Insert, where will the row be added?
+ans:
+	If you right-click on a row reference number and click on Insert, a new row will be added above the selected row. The existing rows will be shifted down, and the new row will take the place of the selected row number.
+
+-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X.
