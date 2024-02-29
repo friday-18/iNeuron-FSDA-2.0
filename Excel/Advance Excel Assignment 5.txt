@@ -1,0 +1,57 @@
+Advance Excel Assignment 5
+
+1.	How many types of conditions are available in conditional formatting on Excel?
+ans:	Five Types of conditions are available in conditional formatting
+			a.Less Than
+			b.Between
+			c.Equal To
+			d.Text That Contains
+			e.A Date Occurring
+			f.Duplicate Values
+			g.Top/Bottom Rules
+
+-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X.
+
+2.	How to insert border in Excel with Format Cells dialog?
+ans:	To insert borders in Excel using the Format Cells dialog:
+			a.Select the cells or range you want to format.
+			b.Right-click and choose "Format Cells."
+			c.Go to the "Border" tab.
+			d.Choose the desired border style under the "Presets" or customize it using the buttons below.
+			e.Click "OK" to apply the borders.
+
+-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X.
+
+3.	How to Format Numbers as Currency in Excel?
+ans:	a.Select the cell or range containing the numbers.
+		b.Go to the "Home" tab on the Ribbon.
+		c.In the "Number" group, click the drop-down arrow next to the Number Format box.
+		d.Choose "Currency" from the list.
+
+-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X.
+
+4.	What are the steps to format numbers in Excel with the Percent style?
+ans:	a.Select the cell or range containing the numbers.
+		b.Go to the "Home" tab on the Ribbon.
+		c.In the "Number" group, click the "%" symbol. Alternatively, you can use the "Format Cells" dialog and choose the "Percentage" category.
+
+-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X.
+
+5.	What is a shortcut to merge two or more cells in excel?
+ans:	a.Select the cells you want to merge.
+		b.Use the shortcut: Alt + H + M + M.
+
+-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X.
+
+6.	How do you use text commands in Excel?
+ans:	The TEXT function in Excel converts numbers from the numerical format to text format by using formatting codes.
+		Syntax:- 
+			=TEXT(value, format_text)
+		Example:-
+			=TEXT(C9,”dd mmmm, yyyy”) 
+			Converts the numerical Date 20-04-2000 into the text format 20April, 2000
+			
+-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X.
+
+
+
